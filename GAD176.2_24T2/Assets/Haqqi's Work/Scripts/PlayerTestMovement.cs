@@ -28,4 +28,11 @@ public class PlayerTestMovement : MonoBehaviour
         // Move the player using the Rigidbody2D component
         rb.velocity = movement * moveSpeed;
     }
+    public IEnumerator BoostSpeed(float speedBoost, float duration) 
+    {
+        float initSpeed = moveSpeed;
+        moveSpeed += speedBoost;
+        yield return new WaitForSeconds(duration);
+        moveSpeed = initSpeed;
+    }
 }
