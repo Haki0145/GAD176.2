@@ -7,10 +7,12 @@ public class PlayerTestMovement : MonoBehaviour
     public float moveSpeed = 5f; // Speed of the player
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private Vector2 movement; // Variable to store the movement input
+    private float initSpeed ;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to the player
+        initSpeed = moveSpeed;
     }
 
     void Update()
@@ -30,7 +32,6 @@ public class PlayerTestMovement : MonoBehaviour
     }
     public IEnumerator BoostSpeed(float speedBoost, float duration) 
     {
-        float initSpeed = moveSpeed;
         moveSpeed += speedBoost;
         yield return new WaitForSeconds(duration);
         moveSpeed = initSpeed;

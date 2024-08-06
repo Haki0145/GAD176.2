@@ -11,5 +11,8 @@ public class PowerSpeed : MonoBehaviour, IPowerUp
     {
         PlayerTestMovement playerTestMovement = player.GetComponent<PlayerTestMovement>();
         StartCoroutine(playerTestMovement.BoostSpeed(additionalSpeed, speedDuration));
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
+        Destroy(gameObject, speedDuration + 3);
     }
 }

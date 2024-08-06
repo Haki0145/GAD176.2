@@ -9,6 +9,7 @@ public class PowerUpHandler : MonoBehaviour
         if (collision.gameObject.GetComponent<IPowerUp>()!= null)
         {
             collision.gameObject.GetComponent<IPowerUp>().ExecutePowerUp(gameObject);
+            //Destroy(collision.gameObject);
         }
     }
 }
