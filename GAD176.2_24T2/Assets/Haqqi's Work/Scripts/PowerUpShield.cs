@@ -18,18 +18,19 @@ public class PowerUpShield : MonoBehaviour, IPowerUp
 
             // Position the shield at the player's position
             shieldInstance.transform.localPosition = Vector3.zero;
-
+            player.GetComponent<PlayerStatus>().sheildSActivated = true;
             // Start the coroutine to deactivate the shield after the duration
-            player.GetComponent<MonoBehaviour>().StartCoroutine(DeactivateShieldAfterTime(shieldInstance, shieldDuration));
+            player.GetComponent<MonoBehaviour>().StartCoroutine(DeactivateShieldAfterTime(shieldInstance, shieldDuration, player));
         }
 
         // Optionally destroy the power-up object after it's used
         Destroy(gameObject);
     }
 
-    private IEnumerator DeactivateShieldAfterTime(GameObject shield, float duration)
+    private IEnumerator DeactivateShieldAfterTime(GameObject shield, float duration, GameObject player)
     {
         yield return new WaitForSeconds(duration);
+        player.GetComponent<PlayerStatus>().sheildSActivated = false;
         Destroy(shield); // Destroy the shield after the duration
     }
 }
