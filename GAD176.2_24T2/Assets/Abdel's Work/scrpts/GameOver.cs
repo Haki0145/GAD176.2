@@ -77,5 +77,4 @@ public class GameOver : MonoBehaviour
     {
         loop?.Invoke();
     }
-
 }

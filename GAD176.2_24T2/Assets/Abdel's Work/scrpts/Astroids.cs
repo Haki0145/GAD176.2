@@ -25,11 +25,10 @@ namespace astroids
         {
             RockGo();
         }
+
         protected virtual void RockGo()
         {
-            RockTimer -= Time.deltaTime; //timer for bullets
-            //Rockspeed = 1000;
-            //Move.speed = Rockspeed;
+            RockTimer -= Time.deltaTime; //timer for atroids
             if (RockTimer > 0)
                 return;
             RockTimer = Random.Range(5, 10);
