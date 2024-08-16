@@ -10,7 +10,6 @@ namespace astroids
         public Movment Move;
         public GameObject Rock;
         [SerializeField] protected float RockTimer;
-        public float Rockspeed;
         public Transform spawnpoint;
         public Transform player;
 
@@ -25,11 +24,10 @@ namespace astroids
         {
             RockGo();
         }
+
         protected virtual void RockGo()
         {
-            RockTimer -= Time.deltaTime; //timer for bullets
-            //Rockspeed = 1000;
-            //Move.speed = Rockspeed;
+            RockTimer -= Time.deltaTime; //timer for atroids
             if (RockTimer > 0)
                 return;
             RockTimer = Random.Range(5, 10);

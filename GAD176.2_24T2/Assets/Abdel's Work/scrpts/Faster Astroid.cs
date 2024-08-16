@@ -5,6 +5,7 @@ namespace astroids
 {
     public class FasterAstroid : Astroids
     {
+        public float Rockspeed;
         // Update is called once per frame
         void Update()
         {
@@ -12,7 +13,7 @@ namespace astroids
         }
         protected override void RockGo()
         {
-            RockTimer -= Time.deltaTime; //timer for bullets
+            RockTimer -= Time.deltaTime; //timer for astroids
             Rockspeed = Random.Range(1300, 1900);
             if (RockTimer > 0)
                 return;
