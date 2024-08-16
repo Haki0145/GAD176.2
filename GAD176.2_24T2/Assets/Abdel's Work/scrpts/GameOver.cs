@@ -21,7 +21,6 @@ public class GameOver : MonoBehaviour
         player = FindAnyObjectByType<Player>();
         player.OnDeath += Gameover;
         endscreen.SetActive(false);
-        //player.Win += WinG;
     }
 
     public void Awake()

@@ -10,7 +10,6 @@ namespace astroids
         public Movment Move;
         public GameObject Rock;
         [SerializeField] protected float RockTimer;
-        public float Rockspeed;
         public Transform spawnpoint;
         public Transform player;
 

@@ -758,7 +758,6 @@ MonoBehaviour:
   Move: {fileID: 11400000, guid: 89a94d862912fbb45a707e744c149b50, type: 2}
   Rock: {fileID: 8271941989294062952, guid: 3eff1e525e75db14a8a0a294cc0ab404, type: 3}
   RockTimer: 0
-  Rockspeed: 0
   spawnpoint: {fileID: 1273977071}
   player: {fileID: 2146202474}
 --- !u!4 &1686260495
@@ -791,9 +790,9 @@ MonoBehaviour:
   Move: {fileID: 0}
   Rock: {fileID: 8271941989294062952, guid: 3eff1e525e75db14a8a0a294cc0ab404, type: 3}
   RockTimer: 0
-  Rockspeed: 0
   spawnpoint: {fileID: 207324727}
   player: {fileID: 2146202474}
+  Rockspeed: 0
 --- !u!114 &1686260497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,7 +808,7 @@ MonoBehaviour:
   Text: {fileID: 833853894}
   timer: {fileID: 1423632540}
   endscreen: {fileID: 991922011}
-  deadlineTime: 4
+  deadlineTime: 1
 --- !u!1 &2014504725
 GameObject:
   m_ObjectHideFlags: 0

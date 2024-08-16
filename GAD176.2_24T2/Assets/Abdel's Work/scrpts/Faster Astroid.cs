@@ -5,6 +5,7 @@ namespace astroids
 {
     public class FasterAstroid : Astroids
     {
+        public float Rockspeed;
         // Update is called once per frame
         void Update()
         {
