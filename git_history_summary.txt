@@ -1,0 +1,18 @@
+*   69d8da0 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'Abdel'
+|\  
+| * c4e7673 (origin/Abdel, Abdel) final touches to the script
+| * 9b04492 cleaning up code and making sure everything is in the right position
+* | 119fb87 Merge branch 'Abdel'
+|\| 
+| * 398c6eb Adding all my files files to fork
+* | 32b4866 Made an event system for player
+|/  
+* 6826137 (origin/Haqqi's_Work) Added spawn power up
+* e33e94f added power up shield
+* 7a90de9 Added health powerup as a prefab
+* a669eb8 Added power up speed and health
+* 9d0fdef (origin/Kaly's-Branch) Created Power up Interface
+* 0030541 made player shoot by left clicking
+* f4709ad made files for each work and created testing player
+* 214c6b3 Made Prefab craetion scene
+* 4fda83d Adde project
